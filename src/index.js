@@ -26,7 +26,7 @@ function getElements(response) {
           <p class="card-text">Total calories: ${(parseFloat(response.hits[i].recipe.calories).toFixed(2))}</p>
           <div id="showIngredient${i}"> 
           </div>  
-          <a href="${response.hits[i].recipe.url}" class="btn btn-primary center">See more details</a>
+          <a href="${response.hits[i].recipe.url}" class="btn btn-primary center">See full recipe</a>
         </div>
       </div>
       `);
