@@ -16,5 +16,10 @@ body {
   /* display: flex;
   flex-wrap: wrap;
   margin: auto; */
-  
+}
+
+.center {
+  display: block;
+  margin: auto;
+  width: 70%;
 }

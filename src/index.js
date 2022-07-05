@@ -18,7 +18,7 @@ function getElements(response) {
   if (response.hits) {
     for (let i = 0; i < response.hits.length; i++) {
       $('.showRecipes').append(`
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 20rem;">
         <img src="${response.hits[i].recipe.images.REGULAR.url}" class="card-img-top" alt="a photo of meal">
         <div class="card-body">
           <h5 class="card-title">${response.hits[i].recipe.label}</h5>
@@ -26,7 +26,7 @@ function getElements(response) {
           <p class="card-text">Total calories: ${(parseFloat(response.hits[i].recipe.calories).toFixed(2))}</p>
           <div id="showIngredient${i}"> 
           </div>  
-          <a href="${response.hits[i].recipe.url}" class="btn btn-primary">See more details</a>
+          <a href="${response.hits[i].recipe.url}" class="btn btn-primary center">See more details</a>
         </div>
       </div>
       `);
