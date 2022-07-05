@@ -5,12 +5,12 @@ import './css/styles.css';
 import RecipeService from './services/recipes-service';
 
 let ingredient = "chicken";
-let diet = "balanced";
 let health = "gluten-free";
-let time = "15-30";
+let cuisineType = "American";
+let mealType = "Breakfast"
 
 async function makeApiCall() {
-  const response = await RecipeService.getRecipe(ingredient, diet, health, time);
+  const response = await RecipeService.getRecipe(ingredient, health, cuisineType, mealType);
   getElements(response);
 }
 
