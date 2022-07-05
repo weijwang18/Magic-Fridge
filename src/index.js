@@ -22,15 +22,16 @@ function getElements(response) {
         <img src="${response.hits[i].recipe.images.REGULAR.url}" class="card-img-top" alt="a photo of meal">
         <div class="card-body">
           <h5 class="card-title">${response.hits[i].recipe.label}</h5>
+          <p class="card-text">Total time: ${response.hits[i].recipe.totalTime} mins</p>
+          <p class="card-text">Total calories: ${(parseFloat(response.hits[i].recipe.calories).toFixed(2))}</p>
           <div id="showIngredient${i}"> 
           </div>  
-          <p class="card-text">Total time: ${response.hits[i].recipe.totalTime} mins</p>
           <a href="${response.hits[i].recipe.url}" class="btn btn-primary">See more details</a>
         </div>
       </div>
       `);
       let ingredientArr =  response.hits[i].recipe.ingredientLines;
-      let ingredientStr = `<li> ${ingredientArr.join("</li><li>")} </li>`;
+      let ingredientStr = `<ul><li> ${ingredientArr.join("</li><li>")} </li></ul>`;
       $(`#showIngredient${i}`).append(`${ingredientStr}`);
     }
   } else {
