@@ -1,27 +1,27 @@
-# (Application Name)
+# Magic-Fridge
 
 #### (Brief Description of Application)
 
-#### By (Joseph Jack)  [GitHub Pages link]
+#### By Winnie Wang && Ryan DeFea && Jonathan Lu && Zhibin Liang  && Joseph Jack
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+- HTML/CSS
+- JavaScript
+- Bootstrap
+- JQuery
+- webpack
+- API
 
 ## Description
 _This repository allows you to pull the files for use in your own project, including (_ tests _/.., src/.., .babelrc, .eslintrc, .gitignore, package-lock.json, package.json, webpack.config.js)_ 
+
 ## Setup/Installation Requirements
 
 1. `Git clone to local terminal`
 2. `npm install`
 3. `npm run build` - if on Mac change //&&// to //;// in package.json , scripts, start section
 4. npm run start
-
-## Logic/Specs
-
 
 ## Known Bugs
 
@@ -33,4 +33,4 @@ _This repository allows you to pull the files for use in your own project, inclu
 
 ## Contact Information
 
-Copyright (c) _6/2022_  -- _Joseph Jack_ [GitHub Account](https://github.com/Josephwjack)
+Copyright (c) _7/2022_  -- Winnie Wang && Ryan DeFea && Jonathan Lu && Zhibin Liang  && Joseph Jack
