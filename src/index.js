@@ -7,7 +7,7 @@ import RecipeService from './services/recipes-service';
 let ingredient = "chicken";
 let health = "gluten-free";
 let cuisineType = "American";
-let mealType = "Breakfast"
+let mealType = "Breakfast";
 
 async function makeApiCall() {
   const response = await RecipeService.getRecipe(ingredient, health, cuisineType, mealType);
