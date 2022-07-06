@@ -4,7 +4,7 @@
 
 body {
   background-color: lightblue;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .showRecipes {
@@ -23,4 +23,12 @@ body {
   display: block;
   margin: auto;
   width: 70%;
+}
+
+.ingredientList {
+  display: none;
+}
+
+.ingredientListTitle:hover .ingredientList {
+  display: block;
 }
