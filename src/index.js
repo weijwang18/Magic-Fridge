@@ -4,10 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
 import RecipeService from "./services/recipes-service";
 
-let ingredient = "chicken";
+let ingredient = "";
 let health = "gluten-free";
 let cuisineType = "American";
-let mealType = "Breakfast";
+let mealType = "Dinner";
 
 async function makeApiCall() {
   const response = await RecipeService.getRecipe(
@@ -24,9 +24,7 @@ function getElements(response) {
     for (let i = 0; i < response.hits.length; i++) {
       $(".showRecipes").append(`
       <div class="card" style="width: 20rem;">
-        <img src="${
-          response.hits[i].recipe.images.REGULAR.url
-        }" class="card-img-top" alt="a photo of meal">
+        <img src="${response.hits[i].recipe.images.REGULAR.url}" class="card-img-top" alt="a photo of meal">
         <div class="card-body">
           <h5 class="card-title">${response.hits[i].recipe.label}</h5>
           <p class="card-text">Total time: ${response.hits[i].recipe.totalTime} mins</p>
@@ -83,7 +81,15 @@ $(document).ready(function () {
   $("h3#Grain").click(function () {
     $(".grain").slideToggle();
   });
-  makeApiCall();
+  $("#submit").click(function(){
+    $("input:checkbox[type='checkbox']:checked").each(function(){
+      const checkedItem = $(this).val()
+      console.log(checkedItem)
+      ingredient = ingredient.concat(" ", checkedItem);
+    });
+    console.log(ingredient)
+    makeApiCall();
+  })
 });
 
 // $(".random").click(function() {
