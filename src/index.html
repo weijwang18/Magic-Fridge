@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,150 +12,53 @@
   <body>
     <div class="container">
       <h1>Magic Fridge🪄</h1>
-      <h3>Health ❤️</h3>
+      <div class="row">
+        <div class="col">
+      <h5>Health</h5>
 <div class="health">
-   <label>
-    <input type="checkbox" id="alcoholCocktail" name="health" class="styled"/>
-    <span>Alcohol-cocktail</span>
-    </label>
-       <label>
-    <input type="checkbox" id="alcoholFree" name="health" class="styled"/>
-    <span>Alcohol-free</span>
-    </label>
-       <label>
-    <input type="checkbox" id="celeryFree" name="health" class="styled"/>
-    <span>Celery-free</span>
-    </label>
-        <input type="checkbox" id="crustaceanFree" name="health" class="styled"/>
-    <span>Crustacean-free</span>
-    </label>
-        <input type="checkbox" id="celeryFree" name="health" class="styled"/>
-    <span>Celery-free</span>
-    </label>
-        <input type="checkbox" id="dairyFree" name="health" class="styled"/>
-    <span>Dairy-free</span>
-    </label>
-        <input type="checkbox" id="DASH" name="health" class="styled"/>
-    <span>DASH</span>
-    </label>
-        <input type="checkbox" id="eggFree" name="health" class="styled"/>
-    <span>Egg-free</span>
-    </label>
-        <input type="checkbox" id="fishFree" name="health" class="styled"/>
-    <span>fish-free</span>
-    </label>
-        <input type="checkbox" id="fodmapFree" name="health" class="styled"/>
-    <span>fodmap-free</span>
-    </label>
-        <input type="checkbox" id="glutenFree" name="health" class="styled"/>
-    <span>gluten-free</span>
-    </label>
-    <label>
-    <input type="checkbox" id="immunoSupportive" name="health" class="styled"/>
-    <span>immuno-supportive</span>
-    </label>
-    <label>
-    <input type="checkbox" id="ketoFriendly" name="health" class="styled"/>
-    <span>keto-friendly</span>
-    </label>
-    <label>
-    <input type="checkbox" id="kidneyFriendly" name="health" class="styled"/>
-    <span>Kidney-friendly</span>
-    </label>
-    <label>
-    <input type="checkbox" id="kosher" name="health" class="styled"/>
-    <span>kosher</span>
-    </label>
-       <label>
-    <input type="checkbox" id="lowFatsAbs" name="health" class="styled"/>
-    <span>low-fat-abs</span>
-    </label>
-           <label>
-    <input type="checkbox" id="lowPotassium" name="health" class="styled"/>
-    <span>low-potassium</span>
-    </label>
-           <label>
-    <input type="checkbox" id="lowSugar name="health" class="styled"/>
-    <span>low-sugar</span>
-    </label>
-           <label>
-    <input type="checkbox" id="lupineFree" name="health" class="styled"/>
-    <span>lupine-free</span>
-    </label>
-           <label>
-    <input type="checkbox" id="mediterranean" name="health" class="styled"/>
-    <span>Mediterranean</span>
-    </label>
-           <label>
-    <input type="checkbox" id="molluskFree" name="health" class="styled"/>
-    <span>mollusk-free</span>
-    </label>
-           <label>
-    <input type="checkbox" id="mustardFree" name="health" class="styled"/>
-    <span>mustard-free</span>
-    </label>
-           <label>
-    <input type="checkbox" id="noOilAdded" name="health" class="styled"/>
-    <span>no-oil-added</span>
-    </label>
-           <label>
-    <input type="checkbox" id="paleo" name="health" class="styled"/>
-    <span>paleo</span>
-    </label>
-           <label>
-    <input type="checkbox" id="peanutFree" name="health" class="styled"/>
-    <span>peanut-free</span>
-    </label>
-           <label>
-    <input type="checkbox" id="pescatarian" name="health" class="styled"/>
-    <span>pescatarian</span>
-    </label>
-               <label>
-    <input type="checkbox" id="porkFree" name="health" class="styled"/>
-    <span>pork-free</span>
-    </label>
-               <label>
-    <input type="checkbox" id="redMeatFree" name="health" class="styled"/>
-    <span>red-meat-free</span>
-    </label>
-               <label>
-    <input type="checkbox" id="sesameFree" name="health" class="styled"/>
-    <span>sesame-free</span>
-    </label>
-               <label>
-    <input type="checkbox" id="shellfishFree" name="health" class="styled"/>
-    <span>shellfish-free</span>
-    </label>
-               <label>
-    <input type="checkbox" id="soyFree" name="health" class="styled"/>
-    <span>soy-free</span>
-    </label>
-               <label>
-    <input type="checkbox" id="sugarConcious" name="health" class="styled"/>
-    <span>sugar-conscious</span>
-    </label>
-               <label>
-    <input type="checkbox" id="sulfiteFree" name="health" class="styled"/>
-    <span>sulfite-free</span>
-    </label>
-               <label>
-    <input type="checkbox" id="treeNutFree" name="health" class="styled"/>
-    <span>tree-nut-free</span>
-    </label>
-                  <label>
-    <input type="checkbox" id="vegan" name="health" class="styled"/>
-    <span>vegan</span>
-    </label>
-                      <label>
-    <input type="checkbox" id="vegetarian" name="health" class="styled"/>
-    <span>vegetarian</span>
-    </label>
-                      <label>
-    <input type="checkbox" id="wheatFree" name="health" class="styled"/>
-    <span>wheat-free</span>
-    </label>
+  <select name="health" id="health">
+    <option value="">--Please choose an option--</option>
+    <option value="alcoholCocktail">Alcohol-cocktail</option>
+    <option value="alcoholFree">Alcohol-free</option>
+    <option value="celeryFree">Celery-free</option>
+    <option value="crustaceanFree">Crustacean-free</option>
+    <option value="dairyFree">Dairy-free</option>
+    <option value="DASH">DASH</option>
+    <option value="eggFree">Egg-free</option>
+    <option value="fishFree">fish-free</option>
+    <option value="fodmapFree">fodmap-free</option>
+    <option value="glutenFree">gluten-free</option>
+    <option value="immunoSupportive">immuno-supportive</option>
+    <option value="ketoFriendly">keto-friendly</option>
+    <option value="kidneyFriendly">Kidney-friendly</option>
+    <option value="kosher">kosher</option>
+    <option value="lowFatsAbs">low-fat-abs</option>
+    <option value="lowPotassium">low-potassium</option>
+    <option value="lowSugar">low-sugar</option>
+    <option value="lupineFree">lupine-free</option>
+    <option value="mediterranean">Mediterranean</option>
+    <option value="molluskFree">mollusk-free</option>
+    <option value="mustardFree">mustard-free</option>
+    <option value="noOilAdded">no-oil-added</option>
+    <option value="paleo">paleo</option>
+    <option value="peanutFree">peanut-free</option>
+    <option value="pescatarian">pescatarian</option>
+    <option value="porkFree">pork-free</option>
+    <option value="redMeatFree">red-meat-free</option>
+    <option value="sesameFree">sesame-free</option>
+    <option value="shellfishFree">shellfish-free</option>
+    <option value="soyFree">soy-free</option>
+    <option value="sugarConcious">sugar-conscious</option>
+    <option value="sulfiteFree">sulfite-free</option>
+    <option value="treeNutFree">tree-nut-free</option>
+    <option value="vegan">vegan</option>
+    <option value="vegetarian">vegetarian</option>
+    <option value="wheatFree">wheat-free</option>
+    </select>
 </div>
-<h3>Cuisine Type 🌐 </h3>
+</div>
+<div class="col">
+<h5>Cuisine Type</h5>
 <div class="cuisineType">
   <select name="cuisineType" id="cuisineType">
     <option value="">--Please choose an option--</option>
@@ -176,7 +82,9 @@
     <option value="southEastAsian">South East Asian</option>
 </select>
 </div>
-<h3>Meal Type 🍴</h3>
+</div>
+<div class="col">
+<h5>Meal Type</h5>
 <div class="mealType">
   <select name="mealType" id="mealType">
     <option value="">--Please choose an option--</option>
@@ -187,17 +95,18 @@
     <option value="teaTime">Teatime</option>
     </select>
 </div>
-      <h3>Vegetable 🥬</h3>
+</div>
+</div>
+      <h3 id="Vegetable">Vegetable 🥬</h3>
     <div class="vegetables">
         <label>
-          <input type="checkbox" id="Asparagus" name="vegetables" class="styled"/>
+          <input type="checkbox" id="Asparagus" name="vegetables"/>
           <span>Asparagus</span>
         </label>
         <label>
           <input type="checkbox" id="eansGreen" name="vegetables" />
           <span>Beans, Green</span>
         </label>
-        <label>
           <input type="checkbox" id="bokChoy" name="vegetables" />
           <span>Bok Choy</span>
         </label>
@@ -358,7 +267,7 @@
           <span>Zucchini</span>
         </label>
     </div>
-    <h3>Beef 🍖</h3>
+    <h3 id="Beef">Beef 🍖</h3>
     <div class="beef">
        <label>
           <input type="checkbox" id="beef" name="beef" class="styled"/>
@@ -405,7 +314,7 @@
           <span>T-Bone</span>
         </label>
     </div>
-    <h3>Pork 🐷</h3>
+    <h3 id="Pork">Pork 🐷</h3>
     <div class="pork">
        <label>
           <input type="checkbox" id="ham" name="pork" class="styled"/>
@@ -440,7 +349,7 @@
           <span>Sausages</span>
         </label>
     </div>
-    <h3>Poultry 🐔</h3>
+    <h3 id="Poultry">Poultry 🐔</h3>
      <div class="poultry">
                <label>
           <input type="checkbox" id="wholeChicken" name="poultry" class="styled"/>
@@ -487,7 +396,7 @@
           <span>Ground Turkey</span>
         </label>
         </div>
-<h3>Fish 🐟</h3>
+<h3 id="Fish">Fish 🐟</h3>
 <div class="fish">
    <label>
       <input type="checkbox" id="cod" name="fish" class="styled"/>
@@ -530,7 +439,7 @@
    <span>Tuna</span>
    </label>
 </div>
-<h3>Shell Fish 🦀</h3>
+<h3 id="ShellFish">Shell Fish 🦀</h3>
 <div class="shellfish">
    <label>
       <input type="checkbox" id="shrimp" name="shellfish" class="styled"/>
@@ -565,7 +474,7 @@
    <span>Mussels</span>
    </label>
 </div>
-<h3>Dairy Products 🐄</h3>
+<h3 id="Dairy">Dairy Products 🐄</h3>
 <div class="dairyProducts">
   <label>
       <input type="checkbox" id="milk" name="dairy" class="styled"/>
@@ -588,7 +497,7 @@
     <span>Cream</span>
    </label>
 </div>
-<h3>Grain 🌾</h3>
+<h3 id="Grain">Grain 🌾</h3>
 <div class="grain">
   <label>
       <input type="checkbox" id="whiteRice" name="grain" class="styled"/>
@@ -680,7 +589,7 @@
 <span>Glass Noodles</span>
 </label>
 </div>
-<button type="click" class="btn btn-primary">Submit</button>
+<button type="click" class="btn btn-info btn-lg btn-block">Submit</button>
 <button type="click" class="btn btn-primary random">Random vege</button>
   <div class="showRecipes"></div>
   <div class="showErrors"></div>
