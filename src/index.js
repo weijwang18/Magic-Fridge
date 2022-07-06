@@ -46,5 +46,18 @@ function getElements(response) {
 }
 
 $(document).ready(function(){
-  makeApiCall();
+  makeApiCall(); 
 });
+
+// $(".random").click(function() {
+//   let must_check = 4;
+//   let checkboxes = Object.keys($('.vegetables input:checkbox[name=vegetables]')).length;
+//   console.log($('.vegetables input:checkbox[name=vegetables]'))
+//   console.log(Object.keys($('.vegetables input:checkbox[name=vegetables]'))[0])
+//   while (Object.keys($('.vegetables input:checkbox[name=vegetables]:checked')).length < must_check) {
+//     console.log(Object.keys($('.vegetables input:checkbox[name=vegetables]:checked')).length)
+//     let random_checkbox = Math.floor(Math.random() * checkboxes) + 1;
+//     console.log(random_checkbox)
+//     $(".vegetables input:nth-child("+random_checkbox+")").prop("checked", true);
+//   }
+// });
