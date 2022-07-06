@@ -3,8 +3,13 @@
 } */
 
 body {
-  background-color: lightblue;
   text-align: center;
+  background: linear-gradient(
+    89.9deg,
+    rgb(208, 246, 255) 0.1%,
+    rgb(255, 237, 237) 47.9%,
+    rgb(255, 255, 231) 100.2%
+  );
 }
 
 .showRecipes {
@@ -23,4 +28,45 @@ body {
   display: block;
   margin: auto;
   width: 70%;
+}
+
+.vegetables,
+.beef,
+.pork,
+.poultry,
+.fish,
+.shellfish,
+.dairyProducts,
+.grain {
+  border: 1px solid rgba(23, 162, 184, 0.3);
+  border-radius: 45px;
+  padding: 20px;
+  box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.3);
+  background-color: #ffff;
+  display:none;
+}
+
+h3#Vegetable,
+h3#Beef,
+h3#Pork,
+h3#Poultry,
+h3#Fish,
+h3#ShellFish,
+h3#Dairy,
+h3#Grain {
+  cursor: pointer;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+button {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
