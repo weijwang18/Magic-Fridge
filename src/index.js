@@ -5,9 +5,7 @@ import "./css/styles.css";
 import RecipeService from "./services/recipes-service";
 
 let ingredient = "";
-let health = "gluten-free";
-let cuisineType = "American";
-let mealType = "Dinner";
+let health, cuisineType, mealType;
 
 async function makeApiCall() {
   const response = await RecipeService.getRecipe(
@@ -37,9 +35,8 @@ function getElements(response) {
             <div id="showIngredient${i}" class="ingredientList"> 
             </div>
           </div>  
-          <a href="${
-            response.hits[i].recipe.url
-          }" class="btn btn-primary center">See full recipe</a>
+          <a href="${response.hits[i].recipe.url}" 
+          class="btn btn-primary center">See full recipe</a>
         </div>
       </div>
       `);
@@ -55,6 +52,13 @@ function getElements(response) {
     );
   }
 }
+
+let clearFields = () => {
+  ingredient = "";
+  health = $("#health").val("");
+  cuisineType = $("#cuisineType").val("");
+  mealType = $("#mealType").val("");
+};
 
 $(document).ready(function () {
   $("h3#Vegetable").click(function () {
@@ -82,14 +86,18 @@ $(document).ready(function () {
     $(".grain").slideToggle();
   });
   $("#submit").click(function(){
+    $('.card').remove();
     $("input:checkbox[type='checkbox']:checked").each(function(){
-      const checkedItem = $(this).val()
-      console.log(checkedItem)
+      const checkedItem = $(this).val();
       ingredient = ingredient.concat(" ", checkedItem);
+      health = $("#health").val();
+      cuisineType = $("#cuisineType").val();
+      mealType = $("#mealType").val();
     });
-    console.log(ingredient)
-    makeApiCall();
-  })
+    // console.log(ingredient);
+    makeApiCall(); 
+    clearFields();
+  });
 });
 
 // $(".random").click(function() {
