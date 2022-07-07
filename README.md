@@ -35,6 +35,15 @@ $ npm run start
 
 - if on Mac change && to ; in package.json , scripts, start section.
 
+## Logistics
+
+|                    | Minimum Product Features                                                            |
+| ------------------ | ----------------------------------------------------------------------------------- |
+| :heavy_check_mark: | User can select diet, meal and cuisine types to alter their search                  |
+| :heavy_check_mark: | User can access contact info and project Github repository from top left corner     |
+| :heavy_check_mark: | User can hover recipe results to display full ingredient list and nutritional facts |
+| :heavy_check_mark: | User can select full recipe from the results to navigate to recipe website          |
+
 ## Technologies Used
 
 - JavaScript
