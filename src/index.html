@@ -1,596 +1,630 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magic Fridge 🪄</title>
   </head>
   <body>
+    <ul class="nav">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          aria-current="page"
+          href="https://github.com/weijwang18/Magic-Fridge"
+          >GitHub</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          aria-current="page"
+          href="https://github.com/weijwang18/Magic-Fridge/blob/main/README.md"
+          >About</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          aria-current="page"
+          href="mailto:weijwang18@gmail.com"
+          >Contact US</a
+        >
+      </li>
+    </ul>
     <div class="container">
-      <!-- <form id="IngredientList"> -->
       <h1>Magic Fridge</h1>
       <div class="row">
         <div class="col">
-      <h5>Health</h5>
-<div class="health">
-  <select name="health" id="health">
-    <option value="">--Please choose an option--</option>
-    <option value="alcohol-cocktail">Alcohol-cocktail</option>
-    <option value="alcohol-free">Alcohol-free</option>
-    <option value="celery-free">Celery-free</option>
-    <option value="crustacean-free">Crustacean-free</option>
-    <option value="dairy-free">Dairy-free</option>
-    <option value="DASH">DASH</option>
-    <option value="egg-free">Egg-free</option>
-    <option value="fish-free">fish-free</option>
-    <option value="fodmap-free">fodmap-free</option>
-    <option value="gluten-free">gluten-free</option>
-    <option value="immuno-supportive">immuno-supportive</option>
-    <option value="keto-friendly">keto-friendly</option>
-    <option value="kidney-friendly">Kidney-friendly</option>
-    <option value="kosher">kosher</option>
-    <option value="low-fats-abs">low-fat-abs</option>
-    <option value="low-potassium">low-potassium</option>
-    <option value="low-sugar">low-sugar</option>
-    <option value="lupine-free">lupine-free</option>
-    <option value="Mediterranean">Mediterranean</option>
-    <option value="mollusk-free">mollusk-free</option>
-    <option value="mustard-free">mustard-free</option>
-    <option value="no-oil-added">no-oil-added</option>
-    <option value="paleo">paleo</option>
-    <option value="peanut-free">peanut-free</option>
-    <option value="pescatarian">pescatarian</option>
-    <option value="pork-free">pork-free</option>
-    <option value="red-meat-free">red-meat-free</option>
-    <option value="sesame-free">sesame-free</option>
-    <option value="shellfish-free">shellfish-free</option>
-    <option value="soy-free">soy-free</option>
-    <option value="sugar-conscious">sugar-conscious</option>
-    <option value="sulfite-free">sulfite-free</option>
-    <option value="tree-nut-free">tree-nut-free</option>
-    <option value="vegan">vegan</option>
-    <option value="vegetarian">vegetarian</option>
-    <option value="wheat-free">wheat-free</option>
-    </select>
-</div>
-</div>
-<div class="col">
-<h5>Cuisine Type</h5>
-<div class="cuisineType">
-  <select name="cuisineType" id="cuisineType">
-    <option value="">--Please choose an option--</option>
-    <option value="american">American</option>
-    <option value="asian">Asian</option>
-    <option value="british">British</option>
-    <option value="caribbean">Caribbean</option>
-    <option value="centralEurope">Central Europe</option>
-    <option value="chinese">Chinese</option>
-    <option value="easternEurope">Eastern Europe</option>
-    <option value="french">French</option>
-    <option value="indian">Indian</option>
-    <option value="italian">Italian</option>
-    <option value="japanese">Japanese</option>
-    <option value="kosher">Kosher</option>
-    <option value="mediterranean">Mediterranean</option>
-    <option value="mexican">Mexican</option>
-    <option value="middleEastern">Middle Eastern</option>
-    <option value="nordic">Nordic</option>
-    <option value="southAmerican">South American</option>
-    <option value="southEastAsian">South East Asian</option>
-</select>
-</div>
-</div>
-<div class="col">
-<h5>Meal Type</h5>
-<div class="mealType">
-  <select name="mealType" id="mealType">
-    <option value="">--Please choose an option--</option>
-    <option value="breakfast">Breakfast</option>
-    <option value="dinner">Dinner</option>
-    <option value="lunch">Lunch</option>
-    <option value="snack">Snack</option>
-    <option value="teaTime">Teatime</option>
-    </select>
-</div>
-</div>
-</div>
-      <h3 id="Vegetable">Vegetable 🥬</h3>
-    <div class="vegetables">
-        <label>
-          <input type="checkbox" value="asparagus" name="vegetables"/>
-          <span>Asparagus</span>
-        </label>
-        <label>
-          <input type="checkbox" value="green beans" name="vegetables" />
-          <span>Beans, Green</span>
-        </label>
-          <input type="checkbox" value="bok choy" name="vegetables" />
-          <span>Bok Choy</span>
-        </label>
-        <label>
-          <input type="checkbox" value="broccoli" name="vegetables" />
-          <span>Broccoli</span>
-        </label>
-        <label>
-          <input type="checkbox" value="brussel sprouts" name="vegetables" />
-          <span>Brussel Sprouts</span>
-        </label>
-        <label>
-          <input type="checkbox" value="cabbage green" name="vegetables" />
-          <span>Cabbage, Green</span>
-        </label>
-        <label>
-          <input type="checkbox" value="cabbage red" name="vegetables" />
-          <span>Cabbage, Red</span>
-        </label>
-        <label>
-          <input type="checkbox" value="carrot" name="vegetables" />
-          <span>Carrot</span>
-        </label>
-        <label>
-          <input type="checkbox" value="cauliflower" name="vegetables" />
-          <span>Cauliflower</span>
-        </label>
-        <label>
-          <input type="checkbox" value="celery" name="vegetables" />
-          <span>Celery</span>
-        </label>
-        <label>
-          <input type="checkbox" value="corn" name="vegetables" />
-          <span>Corn</span>
-        </label>
-        <label>
-          <input type="checkbox" value="cucumber" name="vegetables" />
-          <span>Cucumber</span>
-        </label>
-        <label>
-          <input type="checkbox" value="daikon" name="vegetables" />
-          <span>Daikon</span>
-        </label>
-        <label>
-          <input type="checkbox" value="edamame" name="vegetables" />
-          <span>Edamame</span>
-        </label>
-        <label>
-          <input type="checkbox" value="eggplant" name="vegetables" />
-          <span>Eggplant</span>
-        </label>
-        <label>
-          <input type="checkbox" value="ginger" name="vegetables" />
-          <span>Ginger</span>
-        </label>
-        <label>
-          <input type="checkbox" value="kale" name="vegetables" />
-          <span>Kale</span>
-        </label>
-        <label>
-          <input type="checkbox" value="leeks" name="vegetables" />
-          <span>Leeks</span>
-        </label>
-        <label>
-          <input type="checkbox" value="lettuce iceberg" name="vegetables" />
-          <span>Lettuce, Iceberg</span>
-        </label>
-        <label>
-          <input type="checkbox" value="lettuce leaf" name="vegetables" />
-          <span>Lettuce, Leaf</span>
-        </label>
-        <label>
-          <input type="checkbox" value="lettuce romaine" name="vegetables" />
-          <span>Lettuce, Romaine</span>
-        </label>
-        <label>
-          <input type="checkbox" value="mushrooms" name="vegetables" />
-          <span>Mushrooms</span>
-        </label>
-        <label>
-          <input type="checkbox" value="okra" name="vegetables" />
-          <span>Okra</span>
-        </label>
-        <label>
-          <input type="checkbox" value="onions" name="vegetables" />
-          <span>Onions</span>
-        </label>
-        <label>
-          <input type="checkbox" value="parsnip" name="vegetables" />
-          <span>Parsnip</span>
-        </label>
-        <label>
-          <input type="checkbox" value="peas green" name="vegetables" />
-          <span>Peas, Green</span>
-        </label>
-        <label>
-          <input type="checkbox" value="pepper green" name="vegetables" />
-          <span>Pepper, Green</span>
-        </label>
-        <label>
-          <input type="checkbox" value="pepper sweet red" name="vegetables" />
-          <span>Pepper, Sweet Red</span>
-        </label>
-        <label>
-          <input type="checkbox" value="potato" name="vegetables" />
-          <span>Potato</span>
-        </label>
-        <label>
-          <input type="checkbox" value="pumpkin" name="vegetables" />
-          <span>Pumpkin</span>
-        </label>
-        <label>
-          <input type="checkbox" value="Radish" name="vegetables" />
-          <span>Radish</span>
-        </label>
-        <label>
-          <input type="checkbox" value="shallots" name="vegetables" />
-          <span>Shallots</span>
-        </label>
-        <label>
-          <input type="checkbox" value="peas snow" name="vegetables" />
-          <span>Peas, Snow</span>
-        </label>
-        <label>
-          <input type="checkbox" value="spinach" name="vegetables" />
-          <span>Spinach</span>
-        </label>
-        <label>
-          <input type="checkbox" value="squash" name="vegetables" />
-          <span>Squash</span>
-        </label>
-        <label>
-          <input type="checkbox" value="sugar snap peas" name="vegetables" />
-          <span>Sugar Snap Peas</span>
-        </label>
-        <label>
-          <input type="checkbox" value="sweet potato" name="vegetables" />
-          <span>Sweet Potato</span>
-        </label>
-         <label>
-          <input type="checkbox" value="tofu" name="vegetables" />
-          <span>Tofu</span>
-        </label>
-        <label>
-          <input type="checkbox" value="tomatillo" name="vegetables" />
-          <span>Tomatillo</span>
-        </label>
-        <label>
-          <input type="checkbox" value="tomato" name="vegetables" />
-          <span>Tomato</span>
-        </label>
-        <label>
-          <input type="checkbox" value="turnip" name="vegetables" />
-          <span>Turnip</span>
-        </label>
-        <label>
-          <input type="checkbox" value="zucchini" name="vegetables" />
-          <span>Zucchini</span>
-        </label>
-    </div>
-    <h3 id="Beef">Beef 🍖</h3>
-    <div class="beef">
-       <label>
-          <input type="checkbox" value="beef" name="beef" class="styled"/>
-          <span>Beef</span>
-        </label>
-        <label>
-          <input type="checkbox" value="Strip Steak" name="beef" class="styled"/>
-          <span>Strip Steak</span>
-        </label>
-        <label>
-          <input type="checkbox" value="brisket" name="beef" class="styled"/>
-          <span>Brisket</span>
-        </label>
-        <label>
-          <input type="checkbox" value="flank" name="beef" class="styled"/>
-          <span>Flank</span>
-        </label>
-        <label>
-          <input type="checkbox" value="flat Iron" name="beef" class="styled"/>
-          <span>Flat Iron</span>
-        </label>
-        <label>
-          <input type="checkbox" value="ground Beef" name="beef" class="styled"/>
-          <span>Ground Beef</span>
-        </label>
-        <label>
-          <input type="checkbox" value="ribeye" name="beef" class="styled"/>
-          <span>Ribeye</span>
-        </label>
-        <label>
-          <input type="checkbox" value="short Ribs" name="beef" class="styled"/>
-          <span>Short Ribs</span>
-        </label>
-        <label>
-          <input type="checkbox" value="sierra Steak" name="beef" class="styled"/>
-          <span>Sierra Steak</span>
-        </label>
-        <label>
-          <input type="checkbox" value="sirloin Steak" name="beef" class="styled"/>
-          <span>Sirloin Steak</span>
-        </label>
-        <label>
-          <input type="checkbox" value="t-bone" name="beef" class="styled"/>
-          <span>T-Bone</span>
-        </label>
-    </div>
-    <h3 id="Pork">Pork 🐷</h3>
-    <div class="pork">
-       <label>
-          <input type="checkbox" value="ham" name="pork" class="styled"/>
-          <span>Ham</span>
-        </label>
-         <label>
-          <input type="checkbox" value="pork" name="pork" class="styled"/>
-          <span>Pork</span>
-        </label>
-         <label>
-          <input type="checkbox" value="pork Belly" name="pork" class="styled"/>
-          <span>Pork belly</span>
-        </label>
-         <label>
-          <input type="checkbox" value="pork Butt And Shoulder" name="pork" class="styled"/>
-          <span>Pork Butt and Shoulder</span>
-        </label>
-         <label>
-          <input type="checkbox" value="pork Chops" name="pork" class="styled"/>
-          <span>Pork Chops</span>
-        </label>
-         <label>
-          <input type="checkbox" value="pork Loin" name="pork" class="styled"/>
-          <span>Pork Loin</span>
-        </label>
-         <label>
-          <input type="checkbox" value="pork Ribs" name="pork" class="styled"/>
-          <span>Pork Ribs</span>
-        </label>
-        <label>
-          <input type="checkbox" value="sausages" name="pork" class="styled"/>
-          <span>Sausages</span>
-        </label>
-    </div>
-    <h3 id="Poultry">Poultry 🐔</h3>
-     <div class="poultry">
-               <label>
-          <input type="checkbox" value="chicken" name="poultry" class="styled"/>
-          <span>Whole Chicken</span>
-        </label>
-               <label>
-          <input type="checkbox" value="chicken Breast" name="poultry" class="styled"/>
-          <span>Chicken Breast</span>
-        </label>
-               <label>
-          <input type="checkbox" value="chicken legs" name="poultry" class="styled"/>
-          <span>Chicken Legs</span>
-        </label>
-               <label>
-          <input type="checkbox" value="chicken thighs" name="poultry" class="styled"/>
-          <span>Chicken Thighs</span>
-        </label>
-               <label>
-          <input type="checkbox" value="chicken Wings" name="poultry" class="styled"/>
-          <span>Chicken Wings</span>
-        </label>
-        <label>
-          <input type="checkbox" value="eggs" name="poultry" class="styled"/>
-          <span>Eggs</span>
-        </label>
-        <label>
-          <input type="checkbox" value="duck" name="poultry" class="styled"/>
-          <span>Whole Duck</span>
-        </label>
-        <label>
-          <input type="checkbox" value="turkey" name="poultry" class="styled"/>
-          <span>Whole Turkey</span>
-        </label>
-        <label>
-          <input type="checkbox" value="turkey Breast" name="poultry" class="styled"/>
-          <span>Turkey Breast</span>
-        </label>
-        <label>
-          <input type="checkbox" value="turkey Legs" name="poultry" class="styled"/>
-          <span>Turkey Legs</span>
-        </label>
-        <label>
-          <input type="checkbox" value="ground Turkey" name="poultry" class="styled"/>
-          <span>Ground Turkey</span>
-        </label>
+          <h5>Health</h5>
+          <div class="health">
+            <select name="health" id="health">
+              <option value="">--Please choose an option--</option>
+              <option value="alcohol-cocktail">alcohol-cocktail</option>
+              <option value="alcohol-free">alcohol-free</option>
+              <option value="celery-free">celery-free</option>
+              <option value="crustacean-free">crustacean-free</option>
+              <option value="dairy-free">dairy-free</option>
+              <option value="DASH">DASH</option>
+              <option value="egg-free">egg-free</option>
+              <option value="fish-free">fish-free</option>
+              <option value="fodmap-free">fodmap-free</option>
+              <option value="gluten-free">gluten-free</option>
+              <option value="immuno-supportive">immuno-supportive</option>
+              <option value="keto-friendly">keto-friendly</option>
+              <option value="kidney-friendly">Kidney-friendly</option>
+              <option value="kosher">kosher</option>
+              <option value="low-fats-abs">low-fat-abs</option>
+              <option value="low-potassium">low-potassium</option>
+              <option value="low-sugar">low-sugar</option>
+              <option value="lupine-free">lupine-free</option>
+              <option value="Mediterranean">Mediterranean</option>
+              <option value="mollusk-free">mollusk-free</option>
+              <option value="mustard-free">mustard-free</option>
+              <option value="no-oil-added">no-oil-added</option>
+              <option value="paleo">paleo</option>
+              <option value="peanut-free">peanut-free</option>
+              <option value="pescatarian">pescatarian</option>
+              <option value="pork-free">pork-free</option>
+              <option value="red-meat-free">red-meat-free</option>
+              <option value="sesame-free">sesame-free</option>
+              <option value="shellfish-free">shellfish-free</option>
+              <option value="soy-free">soy-free</option>
+              <option value="sugar-conscious">sugar-conscious</option>
+              <option value="sulfite-free">sulfite-free</option>
+              <option value="tree-nut-free">tree-nut-free</option>
+              <option value="vegan">vegan</option>
+              <option value="vegetarian">vegetarian</option>
+              <option value="wheat-free">wheat-free</option>
+            </select>
+          </div>
         </div>
-<h3 id="Fish">Fish 🐟</h3>
-<div class="fish">
-   <label>
-      <input type="checkbox" value="cod" name="fish" class="styled"/>
-    <span>Cod</span>
-   </label>
-   <label>
-      <input type="checkbox" value="haddock" name="fish" class="styled"/>
-   <span>Haddock</span>
-   </label>
-   <label>
-      <input type="checkbox" value="pollock" name="fish" class="styled"/>
-   <span>Pollock</span>
-   </label>
-      <label>
-      <input type="checkbox" value="salmon" name="fish" class="styled"/>
-   <span>Salmon</span>
-   </label>
-      <label>
-      <input type="checkbox" value="sardines" name="fish" class="styled"/>
-   <span>Sardines</span>
-   </label>
-      <label>
-      <input type="checkbox" value="sea bass" name="fish" class="styled"/>
-   <span>Sea Bass</span>
-   </label>
-      <label>
-      <input type="checkbox" value="swordfish" name="fish" class="styled"/>
-   <span>Swordfish</span>
-   </label>
-      <label>
-      <input type="checkbox" value="tilapia" name="fish" class="styled"/>
-   <span>Tilapia</span>
-   </label>
-      <label>
-      <input type="checkbox" value="trout" name="fish" class="styled"/>
-   <span>Trout</span>
-   </label>
-      <label>
-      <input type="checkbox" value="tuna" name="fish" class="styled"/>
-   <span>Tuna</span>
-   </label>
-</div>
-<h3 id="ShellFish">Shell Fish 🦀</h3>
-<div class="shellfish">
-   <label>
-      <input type="checkbox" value="shrimp" name="shellfish" class="styled"/>
-    <span>Shrimp</span>
-   </label>
-   <label>
-      <input type="checkbox" value="crawfish" name="shellfish" class="styled"/>
-   <span>Crawfish</span>
-   </label>
-   <label>
-      <input type="checkbox" value="crab" name="shellfish" class="styled"/>
-   <span>Crab</span>
-   </label>
-      <label>
-      <input type="checkbox" value="lobster" name="shellfish" class="styled"/>
-   <span>Lobster</span>
-   </label>
-      <label>
-      <input type="checkbox" value="clams" name="shellfish" class="styled"/>
-   <span>Clams</span>
-   </label>
-      <label>
-      <input type="checkbox" value="scallops" name="shellfish" class="styled"/>
-   <span>Scallops</span>
-   </label>
-      <label>
-      <input type="checkbox" value="oysters" name="shellfish" class="styled"/>
-   <span>Oysters</span>
-   </label>
-      <label>
-      <input type="checkbox" value="mussels" name="shellfish" class="styled"/>
-   <span>Mussels</span>
-   </label>
-</div>
-<h3 id="Dairy">Dairy Products 🐄</h3>
-<div class="dairyProducts">
-  <label>
-      <input type="checkbox" value="milk" name="dairy" class="styled"/>
-    <span>Milk</span>
-   </label>
-     <label>
-      <input type="checkbox" value="butter" name="dairy" class="styled"/>
-    <span>Butter</span>
-   </label>
-     <label>
-      <input type="checkbox" value="cheese" name="dairy" class="styled"/>
-    <span>Cheese</span>
-   </label>
-     <label>
-      <input type="checkbox" value="yogurt" name="dairy" class="styled"/>
-    <span>Yogurt</span>
-   </label>
-     <label>
-      <input type="checkbox" value="cream" name="dairy" class="styled"/>
-    <span>Cream</span>
-   </label>
-</div>
-<h3 id="Grain">Grain 🌾</h3>
-<div class="grain">
-  <label>
-      <input type="checkbox" value="white Rice" name="grain" class="styled"/>
-    <span>White Rice</span>
-   </label>
-     <label>
-      <input type="checkbox" value="brown Rice" name="grain" class="styled"/>
-    <span>Brown Rice</span>
-   </label>
-     <label>
-      <input type="checkbox" value="basmati Rice" name="grain" class="styled"/>
-    <span>Basmati Rice</span>
-   </label>
-     <label>
-      <input type="checkbox" value="jasmine Rice" name="grain" class="styled"/>
-    <span>Jasmine Rice</span>
-   </label>
-     <label>
-      <input type="checkbox" value="angel Hair" name="grain" class="styled"/>
-    <span>Angel Hair</span>
-   </label>
-        <label>
-      <input type="checkbox" value="bow Ties" name="grain" class="styled"/>
-    <span>Farfalle (Bow Ties)</span>
-   </label>
-        <label>
-      <input type="checkbox" value="fettuccine" name="grain" class="styled"/>
-    <span>Fettuccine</span>
-   </label>
-           <label>
-      <input type="checkbox" value="orzo" name="grain" class="styled"/>
-    <span>Orzo</span>
-   </label>
-           <label>
-      <input type="checkbox" value="penne" name="grain" class="styled"/>
-    <span>Penne</span>
-   </label>
-           <label>
-      <input type="checkbox" value="rigatoni" name="grain" class="styled"/>
-    <span>Rigatoni</span>
-   </label>
-           <label>
-      <input type="checkbox" value="spaghetti" name="grain" class="styled"/>
-    <span>Spaghetti</span>
-   </label>
-              <label>
-      <input type="checkbox" value="macaroni" name="grain" class="styled"/>
-    <span>Macaroni</span>
-   </label>
-              <label>
-      <input type="checkbox" value="linguine" name="grain" class="styled"/>
-    <span>Linguine</span>
-   </label>
-  </label>
-  <label>
-<input type="checkbox" value="bread" name="grain" class="styled"/>
-<span>Bread</span>
-</label>
-  <label>
-<input type="checkbox" value="egg Noodle" name="grain" class="styled"/>
-<span>Egg Noodles</span>
-</label>
-  <label>
-<input type="checkbox" value="soba Noodles" name="grain" class="styled"/>
-<span>Soba Noodles</span>
-</label>
-  <label>
-<input type="checkbox" value="ramen Noodles" name="grain" class="styled"/>
-<span>Ramen Noodles</span>
-</label>
-  <label>
-<input type="checkbox" value="rice Stick Noodles" name="grain" class="styled"/>
-<span>Rice Stick Noodles</span>
-</label>
-  <label>
-<input type="checkbox" value="udon Noodles" name="grain" class="styled"/>
-<span>Udon Noodles</span>
-</label>
-  <label>
-<input type="checkbox" value="glass Noodle" name="grain" class="styled"/>
-<span>Glass Noodles</span>
-</label>
-</div>
-<button type="click" id="submit" class="btn btn-info btn-lg btn-block">Submit</button>
-<!-- <button type="click" class="btn btn-primary random">Random vege</button> -->
-<div class="showRecipes"></div>
-<div class="showErrors"></div>  
-<!-- </form> -->
-</div> 
-
+        <div class="col">
+          <h5>Cuisine Type</h5>
+          <div class="cuisineType">
+            <select name="cuisineType" id="cuisineType">
+              <option value="">--Please choose an option--</option>
+              <option value="american" selected>American</option>
+              <option value="asian">Asian</option>
+              <option value="british">British</option>
+              <option value="caribbean">Caribbean</option>
+              <option value="centralEurope">Central Europe</option>
+              <option value="chinese">Chinese</option>
+              <option value="easternEurope">Eastern Europe</option>
+              <option value="french">French</option>
+              <option value="indian">Indian</option>
+              <option value="italian">Italian</option>
+              <option value="japanese">Japanese</option>
+              <option value="kosher">Kosher</option>
+              <option value="mediterranean">Mediterranean</option>
+              <option value="mexican">Mexican</option>
+              <option value="middleEastern">Middle Eastern</option>
+              <option value="nordic">Nordic</option>
+              <option value="southAmerican">South American</option>
+              <option value="southEastAsian">South East Asian</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <h5>Meal Type</h5>
+          <div class="mealType">
+            <select name="mealType" id="mealType">
+              <option value="">--Please choose an option--</option>
+              <option value="breakfast" selected>Breakfast</option>
+              <option value="dinner">Dinner</option>
+              <option value="lunch">Lunch</option>
+              <option value="snack">Snack</option>
+              <option value="teaTime">Teatime</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <h3 id="Vegetable">Vegetable 🥬</h3>
+      <div class="vegetables">
+        <input
+          type="checkbox"
+          value="asparagus"
+          id="asparagus"
+          name="vegetables"
+        />
+        <label for="asparagus">Asparagus</label>
+        <input
+          type="checkbox"
+          value="green beans"
+          id="greenBeans"
+          name="vegetables"
+        />
+        <label for="greenBeans">Beans, Green</label>
+        <input
+          type="checkbox"
+          value="bok choy"
+          id="bokchoy"
+          name="vegetables"
+        />
+        <label for="bokchoy">Bok Choy</label>
+        <input
+          type="checkbox"
+          value="broccoli"
+          id="broccoli"
+          name="vegetables"
+        />
+        <label for="broccoli">Broccoli</label>
+        <input
+          type="checkbox"
+          value="brussel sprouts"
+          id="brusselSprouts"
+          name="vegetables"
+        />
+        <label for="brusselSprouts">Brussel Sprouts</label>
+        <input
+          type="checkbox"
+          value="cabbage green"
+          id="cabbageGreen"
+          name="vegetables"
+        />
+        <label for="cabbageGreen">Cabbage, Green</label>
+        <input
+          type="checkbox"
+          value="cabbage red"
+          id="cabbageRed"
+          name="vegetables"
+        />
+        <label for="cabbageRed">Cabbage, Red</label>
+        <input type="checkbox" value="carrot" id="carrot" name="vegetables" />
+        <label for="carrot">Carrot</label>
+        <input
+          type="checkbox"
+          value="cauliflower"
+          id="cauliflower"
+          name="vegetables"
+        />
+        <label for="cauliflower">Cauliflower</label>
+        <input type="checkbox" value="celery" id="celery" name="vegetables" />
+        <label for="celery">Celery</label>
+        <input type="checkbox" value="corn" id="corn" name="vegetables" />
+        <label for="corn">Corn</label>
+        <input
+          type="checkbox"
+          value="cucumber"
+          id="cucumber"
+          name="vegetables"
+        />
+        <label for="cucumber">Cucumber</label>
+        <input type="checkbox" value="daikon" id="daikon" name="vegetables" />
+        <label for="daikon">Daikon</label>
+        <input type="checkbox" value="edamame" id="edamame" name="vegetables" />
+        <label for="edamame">Edamame</label>
+        <input
+          type="checkbox"
+          value="eggplant"
+          id="eggplant"
+          name="vegetables"
+        />
+        <label for="eggplant">Eggplant</label>
+        <input type="checkbox" value="ginger" id="ginger" name="vegetables" />
+        <label for="ginger">Ginger</label>
+        <input type="checkbox" value="kale" id="kale" name="vegetables" />
+        <label for="kale">Kale</label>
+        <input type="checkbox" value="leeks" id="leeks" name="vegetables" />
+        <label for="leeks">Leeks</label>
+        <input
+          type="checkbox"
+          value="lettuce iceberg"
+          id="lettuceIceberg"
+          name="vegetables"
+        />
+        <label for="lettuceIceberg">Lettuce, Iceberg</label>
+        <input
+          type="checkbox"
+          value="lettuce leaf"
+          id="lettuceLeaf"
+          name="vegetables"
+        />
+        <label for="lettuceLeaf">Lettuce, Leaf</label>
+        <input
+          type="checkbox"
+          value="lettuce romaine"
+          id="lettuceRomaine"
+          name="vegetables"
+        />
+        <label for="lettuceRomaine">Lettuce, Romaine</label>
+        <input
+          type="checkbox"
+          value="mushrooms"
+          id="mushrooms"
+          name="vegetables"
+        />
+        <label for="mushrooms">Mushrooms</label>
+        <input type="checkbox" value="okra" id="okra" name="vegetables" />
+        <label for="okra">Okra</label>
+        <input type="checkbox" value="onions" id="onions" name="vegetables" />
+        <label for="onions">Onions</label>
+        <input type="checkbox" value="parsnip" id="parsnip" name="vegetables" />
+        <label for="parsnip">Parsnip</label>
+        <input
+          type="checkbox"
+          value="peas green"
+          id="peasGreen"
+          name="vegetables"
+        />
+        <label for="peasGreen">Peas, Green</label>
+        <input
+          type="checkbox"
+          value="pepper green"
+          id="pepperGreen"
+          name="vegetables"
+        />
+        <label for="pepperGreen">Pepper, Green</label>
+        <input
+          type="checkbox"
+          value="pepper sweet red"
+          id="pepperSweetRed"
+          name="vegetables"
+        />
+        <label for="pepperSweetRed">Pepper, Sweet Red</label>
+        <input type="checkbox" value="potato" id="potato" name="vegetables" />
+        <label for="potato">Potato</label>
+        <input type="checkbox" value="pumpkin" id="pumpkin" name="vegetables" />
+        <label for="pumpkin">Pumpkin</label>
+        <input type="checkbox" value="Radish" id="Radish" name="vegetables" />
+        <label for="Radish">Radish</label>
+        <input
+          type="checkbox"
+          value="shallots"
+          id="shallots"
+          name="vegetables"
+        />
+        <label for="shallots">Shallots</label>
+        <input
+          type="checkbox"
+          value="peas snow"
+          id="peasSnow"
+          name="vegetables"
+        />
+        <label for="peasSnow">Peas, Snow</label>
+        <input type="checkbox" value="spinach" id="spinach" name="vegetables" />
+        <label for="spinach">Spinach</label>
+        <input type="checkbox" value="squash" id="squash" name="vegetables" />
+        <label for="squash">Squash</label>
+        <input
+          type="checkbox"
+          value="sugar snap peas"
+          id="sugarSnapPeas"
+          name="vegetables"
+        />
+        <label for="sugarSnapPeas">Sugar Snap Peas</label>
+        <input
+          type="checkbox"
+          value="sweet potato"
+          id="sweetPotato"
+          name="vegetables"
+        />
+        <label for="sweetPotato">Sweet Potato</label>
+        <input type="checkbox" value="tofu" id="tofu" name="vegetables" />
+        <label for="tofu">Tofu</label>
+        <input
+          type="checkbox"
+          value="tomatillo"
+          id="tomatillo"
+          name="vegetables"
+        />
+        <label for="tomatillo">Tomatillo</label>
+        <input type="checkbox" value="tomato" id="tomato" name="vegetables" />
+        <label for="tomato">Tomato</label>
+        <input type="checkbox" value="turnip" id="turnip" name="vegetables" />
+        <label for="turnip">Turnip</label>
+        <input
+          type="checkbox"
+          value="zucchini"
+          id="zucchini"
+          name="vegetables"
+        />
+        <label for="zucchini">Zucchini</label>
+      </div>
+      <h3 id="Beef">Beef 🍖</h3>
+      <div class="beef">
+        <input type="checkbox" value="beef" id="beef" name="beef" />
+        <label for="beef">Beef</label>
+        <input
+          type="checkbox"
+          value="Strip Steak"
+          id="strip steak"
+          name="beef"
+        />
+        <label for="strip steak">Strip Steak</label>
+        <input type="checkbox" value="brisket" id="brisket" name="beef" />
+        <label for="brisket">Brisket</label>
+        <input type="checkbox" value="flank" id="flank" name="beef" />
+        <label for="flank">Flank</label>
+        <input type="checkbox" value="flat Iron" id="flat Iron" name="beef" />
+        <label for="flat Iron">Flat Iron</label>
+        <input
+          type="checkbox"
+          value="ground Beef"
+          id="ground Beef"
+          name="beef"
+        />
+        <label for="ground Beef">Ground Beef</label>
+        <input type="checkbox" value="ribeye" id="ribeye" name="beef" />
+        <label for="ribeye">Ribeye</label>
+        <input type="checkbox" value="short Ribs" id="short Ribs" name="beef" />
+        <label for="short Ribs">Short Ribs</label>
+        <input
+          type="checkbox"
+          value="sierra Steak"
+          id="sierra Steak"
+          name="beef"
+        />
+        <label for="sierra Steak">Sierra Steak</label>
+        <input
+          type="checkbox"
+          value="sirloin Steak"
+          id="sirloin Steak"
+          name="beef"
+        />
+        <label for="sirloin Steak">Sirloin Steak</label>
+        <input type="checkbox" value="t-bone" id="t-bone" name="beef" />
+        <label for="t-bone">T-Bone</label>
+      </div>
+      <h3 id="Pork">Pork 🐷</h3>
+      <div class="pork">
+        <input type="checkbox" value="ham" id="ham" name="pork" />
+        <label for="ham">Ham</label>
+        <input type="checkbox" value="pork" id="pork" name="pork" />
+        <label for="pork">Pork</label>
+        <input type="checkbox" value="pork Belly" id="pork belly" name="pork" />
+        <label for="pork belly">Pork belly</label>
+        <input
+          type="checkbox"
+          value="pork butt and shoulder"
+          id="pork butt and shoulder"
+          name="pork"
+        />
+        <label for="pork butt and shoulder">Pork Butt and Shoulder</label>
+        <input type="checkbox" value="pork Chops" id="pork chops" name="pork" />
+        <label for="pork chops">Pork Chops</label>
+        <input type="checkbox" value="pork Loin" id="pork loin" name="pork" />
+        <label for="pork loin">Pork Loin</label>
+        <input type="checkbox" value="pork Ribs" id="pork ribs" name="pork" />
+        <label for="pork ribs">Pork Ribs</label>
+        <input type="checkbox" value="sausages" id="sausage" name="pork" />
+        <label for="sausage">Sausage</label>
+      </div>
+      <h3 id="Poultry">Poultry 🐔</h3>
+      <div class="poultry">
+        <input
+          type="checkbox"
+          value="chicken"
+          id="whole chicken"
+          name="poultry"
+        />
+        <label for="whole chicken">Whole Chicken</label>
+        <input
+          type="checkbox"
+          value="chicken Breast"
+          id="chickenBreast"
+          name="poultry"
+        />
+        <label for="chickenBreast">Chicken Breast</label>
+        <input
+          type="checkbox"
+          value="chicken legs"
+          id="chickenLegs"
+          name="poultry"
+        />
+        <label for="chickenLegs">Chicken Legs</label>
+        <input
+          type="checkbox"
+          value="chicken thighs"
+          id="chicken thighs"
+          name="poultry"
+        />
+        <label for="chicken thighs">Chicken Thighs</label>
+        <input
+          type="checkbox"
+          value="chicken wings"
+          id="chicken wings"
+          name="poultry"
+        />
+        <label for="chicken wings">Chicken Wings</label>
+        <input type="checkbox" value="eggs" id="eggs" name="poultry" />
+        <label for="eggs">Eggs</label>
+        <input type="checkbox" value="duck" id="whole duck" name="poultry" />
+        <label for="whole duck">Whole Duck</label>
+        <input
+          type="checkbox"
+          value="turkey"
+          id="whole turkey"
+          name="poultry"
+        />
+        <label for="whole turkey">Whole Turkey</label>
+        <input
+          type="checkbox"
+          value="turkey Breast"
+          id="turkey breast"
+          name="poultry"
+        />
+        <label for="turkey breast">Turkey Breast</label>
+        <input
+          type="checkbox"
+          value="turkey Legs"
+          id="turkey legs"
+          name="poultry"
+        />
+        <label for="turkey legs">Turkey Legs</label>
+        <input
+          type="checkbox"
+          value="ground Turkey"
+          id="ground turkey"
+          name="poultry"
+        />
+        <label for="ground turkey">Ground Turkey</label>
+      </div>
+      <h3 id="Fish">Fish 🐟</h3>
+      <div class="fish">
+        <input type="checkbox" value="cod" id="cod" name="fish" />
+        <label for="cod">Cod</label>
+        <input type="checkbox" value="haddock" id="haddock" name="fish" />
+        <label for="haddock">Haddock</label>
+        <input type="checkbox" value="pollock" id="pollock" name="fish" />
+        <label for="pollock">Pollock</label>
+        <input type="checkbox" value="salmon" id="salmon" name="fish" />
+        <label for="salmon">Salmon</label>
+        <input type="checkbox" value="sardines" id="sardines" name="fish" />
+        <label for="sardines">Sardines</label>
+        <input type="checkbox" value="sea bass" id="seabass" name="fish" />
+        <label for="seabass">Sea Bass</label>
+        <input type="checkbox" value="swordfish" id="swordfish" name="fish" />
+        <label for="swordfish">Swordfish</label>
+        <input type="checkbox" value="tilapia" id="tilapia" name="fish" />
+        <label for="tilapia">Tilapia</label>
+        <input type="checkbox" value="trout" id="trout" name="fish" />
+        <label for="trout">Trout</label>
+        <input type="checkbox" value="tuna" id="tuna" name="fish" />
+        <label for="tuna">Tuna</label>
+      </div>
+      <h3 id="ShellFish">Shell Fish 🦀</h3>
+      <div class="shellfish">
+        <input type="checkbox" value="shrimp" id="shrimp" name="shellfish" />
+        <label for="shrimp">Shrimp</label>
+        <input
+          type="checkbox"
+          value="crawfish"
+          id="crawfish"
+          name="shellfish"
+        />
+        <label for="crawfish">Crawfish</label>
+        <input type="checkbox" value="crab" id="crab" name="shellfish" />
+        <label for="crab">Crab</label>
+        <input type="checkbox" value="lobster" id="lobster" name="shellfish" />
+        <label for="lobster">Lobster</label>
+        <input type="checkbox" value="clams" id="clams" name="shellfish" />
+        <label for="clams">Clams</label>
+        <input
+          type="checkbox"
+          value="scallops"
+          id="scallops"
+          name="shellfish"
+        />
+        <label for="scallops">Scallops</label>
+        <input type="checkbox" value="oysters" id="oysters" name="shellfish" />
+        <label for="oysters">Oysters</label>
+        <input type="checkbox" value="mussels" id="mussels" name="shellfish" />
+        <label for="mussels">Mussels</label>
+      </div>
+      <h3 id="Dairy">Dairy Products 🐄</h3>
+      <div class="dairyProducts">
+        <input type="checkbox" value="milk" id="milk" name="dairy" />
+        <label for="milk">Milk</label>
+        <input type="checkbox" value="butter" id="butter" name="dairy" />
+        <label for="butter">Butter</label>
+        <input type="checkbox" value="cheese" id="cheese" name="dairy" />
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" value="yogurt" id="yogurt" name="dairy" />
+        <label for="yogurt">Yogurt</label>
+        <input type="checkbox" value="cream" id="cream" name="dairy" />
+        <label for="cream">Cream</label>
+      </div>
+      <h3 id="Grain">Grain 🌾</h3>
+      <div class="grain">
+        <input type="checkbox" value="white Rice" id="whiteRice" name="grain" />
+        <label for="whiteRice">White Rice</label>
+        <input type="checkbox" value="brown Rice" id="brownRice" name="grain" />
+        <label for="brownRice">Brown Rice</label>
+        <input
+          type="checkbox"
+          value="basmati Rice"
+          id="basmati Rice"
+          name="grain"
+        />
+        <label for="basmati Rice">Basmati Rice</label>
+        <input
+          type="checkbox"
+          value="jasmine Rice"
+          id="jasmine Rice"
+          name="grain"
+        />
+        <label for="jasmine Rice">Jasmine Rice</label>
+        <input
+          type="checkbox"
+          value="angel Hair"
+          id="angel Hair"
+          name="grain"
+        />
+        <label for="angel Hair">Angel Hair</label>
+        <input type="checkbox" value="bow Ties" id="bow Ties" name="grain" />
+        <label for="bow Ties">Farfalle (Bow Ties)</label>
+        <input
+          type="checkbox"
+          value="fettuccine"
+          id="fettuccine"
+          name="grain"
+        />
+        <label for="fettuccine">Fettuccine</label>
+        <input type="checkbox" value="orzo" id="orzo" name="grain" />
+        <label for="orzo">Orzo</label>
+        <input type="checkbox" value="penne" id="penne" name="grain" />
+        <label for="penne">Penne</label>
+        <input type="checkbox" value="rigatoni" id="rigatoni" name="grain" />
+        <label for="rigatoni">Rigatoni</label>
+        <input type="checkbox" value="spaghetti" id="spaghetti" name="grain" />
+        <label for="spaghetti">Spaghetti</label>
+        <input type="checkbox" value="macaroni" id="macaroni" name="grain" />
+        <label for="macaroni">Macaroni</label>
+        <input type="checkbox" value="linguine" id="linguine" name="grain" />
+        <label for="linguine">Linguine</label>
+        <input type="checkbox" value="bread" id="bread" name="grain" />
+        <label for="bread">Bread</label>
+        <input type="checkbox" value="egg Noodle" id="eggNoodle" name="grain" />
+        <label for="eggNoodle">Egg Noodles</label>
+        <input
+          type="checkbox"
+          value="soba Noodles"
+          id="sobaNoodles"
+          name="grain"
+        />
+        <label for="sobaNoodles">Soba Noodles</label>
+        <input
+          type="checkbox"
+          value="ramen Noodles"
+          id="ramenNoodles"
+          name="grain"
+        />
+        <label for="ramenNoodles">Ramen Noodles</label>
+        <input
+          type="checkbox"
+          value="rice Stick Noodles"
+          id="riceStickNoodles"
+          name="grain"
+        />
+        <label for="riceStickNoodles">Rice Stick Noodles</label>
+        <input
+          type="checkbox"
+          value="udon Noodles"
+          id="udonNoodles"
+          name="grain"
+        />
+        <label for="udonNoodles">Udon Noodles</label>
+        <input
+          type="checkbox"
+          value="glass Noodle"
+          id="glassNoodle"
+          name="grain"
+        />
+        <label for="glassNoodle">Glass Noodles</label>
+      </div>
+      <button type="click" id="submit" class="btn btn-info btn-lg btn-block">
+        Submit
+      </button>
+      <div class="showRecipes"></div>
+      <div class="showErrors"></div>
+    </div>
   </body>
 </html>
-
-
-

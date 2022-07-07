@@ -11,9 +11,9 @@ body {
     rgb(255, 237, 237) 47.9%,
     rgb(255, 255, 231) 100.2%
   );
-  font-family: 'Poppins', sans-serif;
-}
 
+  font-family: "Poppins", sans-serif;
+}
 
 .showRecipes {
   display: grid;
@@ -55,7 +55,7 @@ body {
   padding: 20px;
   box-shadow: 3px 7px 20px rgba(0, 0, 0, 0.3);
   background-color: #ffff;
-  display:none;
+  display: none;
 }
 
 h3#Vegetable,
@@ -71,16 +71,90 @@ h3#Grain {
 }
 
 h1 {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 30px;
   font-size: 5rem;
-  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  background: linear-gradient(
+    to right,
+    #ef5350,
+    #f48fb1,
+    #7e57c2,
+    #2196f3,
+    #26c6da,
+    #43a047,
+    #eeff41,
+    #f9a825,
+    #ff5722
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding:5px;
+  padding: 5px;
 }
 
 button {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 34px;
+  cursor: pointer;
+  margin-bottom: 6px;
+  display: inline-block;
+  font-size: 20px;
+}
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 27px;
+  height: 27px;
+  border: 0px solid #cccccc;
+  background: #d6f5fc;
+  border-radius: 20px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: "✓";
+  position: absolute;
+  top: 1px;
+  left: 6px;
+  font-size: 21px;
+  line-height: 1.4;
+  color: #000000;
+  transition: all 0.2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 2px solid #5bc0de !important;
+  background: #ffffff;
+}
+
+.showRecipes,
+.showErrors {
+  margin-bottom: 60px;
+}
+
