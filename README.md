@@ -66,4 +66,10 @@ $ npm run start
 
 ## Contact Information
 
-Copyright (c) _7/2022_ -- _Winnie Wang && Ryan DeFea && Jonathan Lu && Zhibin Liang && Joseph Jack_
+- Winnie Wang <weijwang18@gmail.com>
+- Ryan DeFea <ryan.defea@gmail.com>
+- Jonathan Lu <jdlu.coding@gmail.com>
+- Zhibin Liang <ifthereisoneday@gmail.com>
+- Joseph Jack <joseph.w.jack@gmail.com>
+
+Copyright (c) _7/2022_
