@@ -158,3 +158,17 @@ label:hover:before {
   margin-bottom: 60px;
 }
 
+ul {
+  list-style: none;
+}
+
+h5 {
+  text-align: center;
+  cursor: pointer;
+}
+
+.instruction {
+  display: none;
+  text-align: left;
+  margin-left: 200px;
+}

@@ -74,11 +74,15 @@ function getElements(response) {
 let clearFields = () => {
   ingredient = "";
   health = $("#health").val("");
-  cuisineType = $("#cuisineType").val("");
-  mealType = $("#mealType").val("");
+  cuisineType = $("#cuisineType").val("american");
+  mealType = $("#mealType").val("breakfast");
+  $(".showErrors").text("");
 };
 
 $(document).ready(function () {
+  $("h5#instruction").click(function () {
+    $(".instruction").slideToggle();
+  });
   $("h3#Vegetable").click(function () {
     $(".vegetables").slideToggle();
   });
@@ -108,26 +112,11 @@ $(document).ready(function () {
     $("input:checkbox[type='checkbox']:checked").each(function () {
       const checkedItem = $(this).val();
       ingredient = ingredient.concat(" ", checkedItem);
-      health = $("#health").val();
-      cuisineType = $("#cuisineType").val();
-      mealType = $("#mealType").val();
     });
-
-    console.log(ingredient);
+    health = $("#health").val();
+    cuisineType = $("#cuisineType").val();
+    mealType = $("#mealType").val();
     makeApiCall();
     clearFields();
   });
 });
-
-// $(".random").click(function() {
-//   let must_check = 4;
-//   let checkboxes = Object.keys($('.vegetables input:checkbox[name=vegetables]')).length;
-//   console.log($('.vegetables input:checkbox[name=vegetables]'))
-//   console.log(Object.keys($('.vegetables input:checkbox[name=vegetables]'))[0])
-//   while (Object.keys($('.vegetables input:checkbox[name=vegetables]:checked')).length < must_check) {
-//     console.log(Object.keys($('.vegetables input:checkbox[name=vegetables]:checked')).length)
-//     let random_checkbox = Math.floor(Math.random() * checkboxes) + 1;
-//     console.log(random_checkbox)
-//     $(".vegetables input:nth-child("+random_checkbox+")").prop("checked", true);
-//   }
-// });
