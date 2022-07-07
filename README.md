@@ -2,6 +2,8 @@
 
 #### Recipe finder based on users ingredients
 
+[GitHub Pages](https://weijwang18.github.io/Magic-Fridge/)
+
 #### By Winnie Wang && Ryan DeFea && Jonathan Lu && Zhibin Liang && Joseph Jack
 
 ## Description
